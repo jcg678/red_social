@@ -8,7 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 class UserController extends Controller{
     public function loginAction(Request $request){
-        echo "Preuba";
-        die();
+        return $this->render('AppBundle:User:login.html.twig',[
+            "x"=> "hola"
+        ]);
     }
 }
