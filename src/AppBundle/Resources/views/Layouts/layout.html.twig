@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>
+        {% block title %}Red Social{% endblock %}
+    </title>
+    {% block stylesheets %}
+    {% endblock %}
+    {% block javascripts %}
+    {% endblock %}
+</head>
+<body>
+<header>
+    <h1>Red Social</h1>
+</header>
+<section id="content">
+    {% block content %}
+        Content default
+    {% endblock %}
+
+</section>
+<footer>
+    <hr/>
+    <p>2017 Copy....</p>
+</footer>
+</body>
+
+</html>
