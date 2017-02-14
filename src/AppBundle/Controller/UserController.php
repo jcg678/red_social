@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
 use BackendBundle\Entity\User;
 use AppBundle\Form\RegisterType;
+use Symfony\Component\HttpFoundation\Response;
 
 
 class UserController extends Controller{
@@ -65,5 +66,19 @@ class UserController extends Controller{
         return $this->render('AppBundle:User:register.html.twig',[
             "form"=>$form->createView()
         ]);
+    }
+
+    public function nickTestAction(Request $request){
+        $nick = $request->get("nick");
+        $em = $this->getDoctrine()->getManager();
+        $user_repo = $em->getRepository("BackendBundle:User");
+        $user_isset = $user_repo->findOneBy(array("nick"=>$nick));
+        $result = "used";
+        if(count($user_isset)>=1 && is_object($user_isset)){
+            $result="used";
+        }else{
+            $result="unused";
+        }
+        return new Response($result);
     }
 }
