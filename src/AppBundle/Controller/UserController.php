@@ -17,8 +17,12 @@ class UserController extends Controller{
         $this->session= new Session();
     }
     public function loginAction(Request $request){
+        $authentucationUtils=$this->get('security.authentication_utils');
+        $error = $authentucationUtils->getLastAuthenticationError();
+        $lastUsername = $authentucationUtils->getLastUsername();
         return $this->render('AppBundle:User:login.html.twig',[
-            "x"=> "hola"
+            "last_username"=>$lastUsername,
+            "error"=>$error
         ]);
     }
 
