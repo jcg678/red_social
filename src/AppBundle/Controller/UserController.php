@@ -17,6 +17,9 @@ class UserController extends Controller{
         $this->session= new Session();
     }
     public function loginAction(Request $request){
+        if(is_object($this->getUser())){
+           return $this->redirect('home');
+        }
         $authentucationUtils=$this->get('security.authentication_utils');
         $error = $authentucationUtils->getLastAuthenticationError();
         $lastUsername = $authentucationUtils->getLastUsername();
@@ -27,6 +30,9 @@ class UserController extends Controller{
     }
 
     public function registerAction(Request $request){
+        if(is_object($this->getUser())){
+            return $this->redirect('home');
+        }
         $user = new User();
         $form = $this->createForm(RegisterType::class,$user);
         $form->handleRequest($request);
