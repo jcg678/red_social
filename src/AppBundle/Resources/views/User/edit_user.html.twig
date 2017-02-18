@@ -1,4 +1,9 @@
 {% extends "AppBundle:Layouts:Layout.html.twig" %}
 {% block content %}
-    <h2>Editar usuario</h2>
+    <div class="col-md-8 box-form">
+        <h2>Mis datos</h2>
+        <hr/>
+        {{ form_start(form,{'entype':'mulpart/form-data'}) }}
+        {{ form_end(form) }}
+    </div>
 {% endblock %}

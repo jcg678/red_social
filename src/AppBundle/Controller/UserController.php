@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 use BackendBundle\Entity\User;
 use AppBundle\Form\RegisterType;
 use Symfony\Component\HttpFoundation\Response;
-
+use AppBundle\Form\UserType;
 
 class UserController extends Controller{
     private $session;
@@ -93,9 +93,12 @@ class UserController extends Controller{
     }
 
     public function editUserAction(Request $request){
-        return $this->render('AppBundle:User:edit_user.html.twig'
+        $user =$this->getUser();
+        $form = $this->createForm(UserType::class,$user);
 
-        );
+        return $this->render('AppBundle:User:edit_user.html.twig',[
+               "form"=>$form->createView()
+        ]);
     }
 
 }
