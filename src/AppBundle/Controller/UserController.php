@@ -94,8 +94,53 @@ class UserController extends Controller{
 
     public function editUserAction(Request $request){
         $user =$this->getUser();
+        $user_image = $user->getImage();
         $form = $this->createForm(UserType::class,$user);
+        $form->handleRequest($request);
+        if($form->isSubmitted()){
+            if($form->isValid()){
 
+                $em = $this->getDoctrine()->getManager();
+
+                $query = $em->createQuery('SELECT u FROM BackendBundle:User u where u.email = :email or u.nick = :nick ')
+                    ->setParameter('email',$form->get('email')->getData())
+                    ->setParameter('nick',$form->get('nick')->getData())
+                ;
+                $user_isset = $query->getResult();
+
+                if( ($user->getEmail() == $user_isset[0]->getEmail() && $user->getNick() == $user_isset[0]->getNick()) || count($user_isset) == 0){
+                    //subir fichero
+                    $file = $form["image"]->getData();
+                    if(!empty($file) && $file != null){
+                        $ext = $file->guessExtension();
+                        if($ext == 'jpg' || $ext == 'jpeg' || $ext =='png' || $ext =='gif'){
+                            $file_name =$user->getId().time().'.'.$ext;
+                            $file->move("uploads/users",$file_name);
+                            $user->setImage($file_name);
+                        }
+                    }else{
+                    $user->setImage($user_image);
+                    }
+
+
+                    $em->persist($user);
+                    $flush = $em->flush();
+                    if($flush == null){
+                        $status="Modificado correctamente";
+
+                    }else{
+                        $status="No has modificados tus datos";
+                    }
+                }else{
+                    $status="El usuario ya existe";
+                }
+
+            }else{
+                $status="No has actulizado los datos";
+            }
+            $this->session->getFlashBag()->add("status",$status);
+            return $this->redirect('my-data');
+        }
         return $this->render('AppBundle:User:edit_user.html.twig',[
                "form"=>$form->createView()
         ]);
