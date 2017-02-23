@@ -146,4 +146,8 @@ class UserController extends Controller{
         ]);
     }
 
+    public function usersAction(Request $request){
+        echo "Usuarios";
+        die();
+    }
 }
