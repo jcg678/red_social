@@ -147,7 +147,16 @@ class UserController extends Controller{
     }
 
     public function usersAction(Request $request){
-        echo "Usuarios";
-        die();
+        $em = $this->getDoctrine()->getManager();
+        $dql="SELECT u FROM BackendBundle:User u";
+        $query = $em->createQuery($dql);
+        $paginator = $this->get("knp_paginator");
+        $pagination =$paginator->paginate($query,
+            $request->query->getInt('page',1)
+            ,5);
+
+        return $this->render('AppBundle:User:users.html.twig',[
+            "pagination"=>$pagination
+        ]);
     }
 }

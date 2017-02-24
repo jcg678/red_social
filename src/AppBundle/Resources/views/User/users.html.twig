@@ -1,0 +1,24 @@
+{% extends "AppBundle:Layouts:Layout.html.twig" %}
+{% block content %}
+    <div class="container">
+        <div class="col-md-8 box-form">
+          <h1>Gente</h1>
+            <div class="count">
+                <span class="label label-primary">
+                    Total de personas: {{ pagination.getTotalItemCount }}
+                </span>
+
+            </div>
+            <hr/>
+            <div class="box-content box-users">
+                {% for user in pagination %}
+                    {{ user.email }}<br/>
+                    {% endfor %}
+            </div>
+            <div class="navigation">
+                {{ knp_pagination_render(pagination) }}
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
