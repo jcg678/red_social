@@ -1,7 +1,7 @@
 {% extends "AppBundle:Layouts:Layout.html.twig" %}
 {% block content %}
     <div class="container">
-        <div class="col-md-8 box-form">
+        <div class="col-md-8 box-default">
           <h1>Gente</h1>
             <div class="count">
                 <span class="label label-primary">
@@ -12,7 +12,22 @@
             <hr/>
             <div class="box-content box-users">
                 {% for user in pagination %}
-                    {{ user.email }}<br/>
+                    <div class="col-md-12 user-item">
+                        <div class="avatar">
+                            {% if user.image == null %}
+                                <img src="{{ asset('assets/images/default.png') }}"></img>
+                            {% else %}
+                                <img src="{{ asset('uploads/users/'~user.image) }}"></img>
+                            {% endif %}
+                        </div>
+                        <div class="user-item-content">
+                            <p>{{ user.name }}{{ user.surname }} - {{ user.nick }}</p>
+                            <p>{{ user.bio }}</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr>
+                    </div>
+
                     {% endfor %}
             </div>
             <div class="navigation">
