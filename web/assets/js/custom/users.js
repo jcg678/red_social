@@ -38,4 +38,15 @@ function followButtons(){
          }
       });
    });
+
+   $(".btn-unfollow").unbind("click").click(function(){
+      $.ajax({
+         url: URL+'/unfollow',
+         type: 'POST',
+         data: {followed: $(this).attr("data-followed")},
+         success: function(response){
+            console.log(response);
+         }
+      });
+   });
 }
