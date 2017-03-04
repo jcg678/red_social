@@ -50,3 +50,53 @@ body{
     padding: 10px;
     margin-left: 85px;
 }
+#timeline{
+    margin-right: 20px;
+    min-height: 700px;
+    padding-bottom: 20px;
+}
+
+#user-card{
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+}
+#user-card .avatar{
+    background: #eee;
+    border-radius: 500px;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    float: left;
+}
+
+#user-card .avatar img{
+    height: 100%;
+    text-align: center;
+}
+
+#user-card .avatar img.default{
+    opacity: 0.5;
+}
+
+#user-card .name-surname{
+    float:left;
+    font-size:20px;
+    padding: 10px;
+
+}
+
+#user-card .name-surname a{
+    color: black;
+}
+
+#user-card .nickname {
+    opacity: 0.7;
+}
+
+.box-header{
+    border-bottom: 1px solid #ccc ;
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 25px;
+}

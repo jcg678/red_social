@@ -1,4 +1,37 @@
 {% extends "AppBundle:Layouts:Layout.html.twig" %}
 {% block content %}
-<h2>Publicaciones</h2>
+<div class="container">
+    <div id="timeline" class="col-md-7 box-default  pull-left">
+        <h1 class="box-header">Timeline</h1>
+
+        <div class="box-content">
+            PUBLICACIONES LIST
+        </div>
+    </div>
+    <div id="user-card" class=" col-md-4 box-default pull-left">
+        <div class="avatar">
+            {% if app.user.image == null %}
+                <img src="{{ asset('uploads/users/default.png') }}"></img>
+            {% else %}
+                <img src="{{ asset('uploads/users/'~app.user.image) }}"></img>
+            {% endif %}
+        </div>
+        <div class="name-surname">
+            <a href="#">{{ app.user.name }} {{ app.user.surname }}</a>
+            <div class="clearfix"></div>
+            <span class="nickname">
+                {{ app.user.nick }}
+            </span>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div id="new-publication" class=" col-md-4 box-default pull-left">
+        <h1 class="box-header">Crear Publicación</h1>
+
+        Fomulario
+    </div>
+
+
+</div>
 {% endblock %}
