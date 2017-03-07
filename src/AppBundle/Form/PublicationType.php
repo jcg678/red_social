@@ -29,7 +29,7 @@ class PublicationType extends AbstractType
                 )
             ))
             ->add('image', FileType::class, array(
-                'label'=>'Documento',
+                'label'=>'Imagen',
                 'required'=> false,
                 'data_class'=>null,
                 'attr'=>array(

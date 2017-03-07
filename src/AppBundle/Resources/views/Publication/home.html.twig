@@ -11,9 +11,9 @@
     <div id="user-card" class=" col-md-4 box-default pull-left">
         <div class="avatar">
             {% if app.user.image == null %}
-                <img src="{{ asset('uploads/users/default.png') }}"></img>
+                <img src="{{ asset('assets/images/default.png') }}"></img>
             {% else %}
-                <img src="{{ asset('uploads/users/'~app.user.image) }}"></img>
+                <img src="{{ asset('../uploads/users/'~app.user.image) }}"></img>
             {% endif %}
         </div>
         <div class="name-surname">
