@@ -5,7 +5,13 @@
         <h1 class="box-header">Timeline</h1>
 
         <div class="box-content">
-            PUBLICACIONES LIST
+            {% for publication in pagination %}
+                {{ publication.text }}
+                <hr/>
+                {% endfor %}
+            <div class="navigation">
+                {{ knp_pagination_render(pagination) }}
+            </div>
         </div>
     </div>
     <div id="user-card" class=" col-md-4 box-default pull-left">
@@ -15,6 +21,7 @@
             {% else %}
                 <img src="{{ asset('../uploads/users/'~app.user.image) }}"></img>
             {% endif %}
+
         </div>
         <div class="name-surname">
             <a href="#">{{ app.user.name }} {{ app.user.surname }}</a>
