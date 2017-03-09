@@ -32,7 +32,7 @@ body{
     height: 100%;
     text-align: center;
 }
-
+.publication-item .avatar,
 .user-item .avatar{
     background: #eee;
     border-radius: 550px;
@@ -41,12 +41,14 @@ body{
     overflow: hidden;
     float: left;
 }
-
+.publication-item .avatar img,
 .user-item .avatar img{
    height: 100%;
     text-align: center;
 }
-.user-item .user-item-content{
+.user-item .user-item-content,
+.publication-item .publication-item-content
+{
     padding: 10px;
     margin-left: 85px;
 }
@@ -107,3 +109,10 @@ body{
     margin-bottom: 10px;
 }
 
+.pub-name-link{
+    font-weight: bold;
+    color: black;
+}
+.pub-date{
+    color:gray;
+}
