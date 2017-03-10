@@ -162,7 +162,7 @@ class UserController extends Controller{
 
     public function searchAction(Request $request){
         $em = $this->getDoctrine()->getManager();
-        $search = $request->query->get("search",null);
+        $search = trim($request->query->get("search",null));
         if($search == null){
             return $this->redirect($this->generateUrl('home_publications'));
         }
