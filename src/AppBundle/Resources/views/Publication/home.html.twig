@@ -1,4 +1,9 @@
 {% extends "AppBundle:Layouts:Layout.html.twig" %}
+{%  block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('assets/js/custom/home.js') }}"></script>
+    {%  endblock %}
+
 {% block content %}
 <div class="container">
     <div id="timeline" class="col-md-7 box-default  pull-left">
