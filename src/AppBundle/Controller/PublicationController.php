@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use AppBundle\Form\PublicationType;
 use BackendBundle\Entity\Publication;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -97,5 +98,25 @@ class PublicationController extends Controller{
             5
         );
         return $pagination;
+    }
+
+    public function removePublicationAction(Request $request, $id = null){
+        $em = $this->getDoctrine()->getManager();
+        $publication_repo = $em->getRepository('BackendBundle:Publication');
+        $publication = $publication_repo->find($id);
+        $user = $this->getUser();
+        if($user->getId() == $publication->getUser()->getId()) {
+            $em->remove($publication);
+            $flush = $em->flush();
+            if ($flush == null) {
+                $status = "La publicación se ha borrado ";
+            } else {
+                $status = "La publicación no se ha borrado";
+            }
+        }else{
+            $status = "La publicación no se ha borrado";
+        }
+        return new Response($status);
+
     }
 }
