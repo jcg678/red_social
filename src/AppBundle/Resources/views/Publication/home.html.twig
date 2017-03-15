@@ -49,6 +49,12 @@
                             <img src="{{ asset('uploads/publications/images/'~publication.image) }}"> </img>
                         </div>
                     {% endif %}
+                    <div class="pull-right like">
+                        <span data-id="{{ publication.id }}" class="btn-like glyphicon glyphicon-heart-empty"
+                              aria-hidden="true" data-toggle="tooltip"
+                               data-placement="bottom" title="Me gusta"
+                                ></span>
+                    </div>
                 </div>
                   <div class="clearfix"></div>
                   <hr>
