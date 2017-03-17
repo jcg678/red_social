@@ -45,4 +45,18 @@ function buttons(){
       });
 
    });
+
+   $(".btn-like").unbind('click').click(function(){
+
+      $(this).addClass("hidden");
+      $(this).parent().find('.btn-unlike').removeClass("hidden");
+      $.ajax({
+         url: URL+'/like/'+$(this).attr("data-id"),
+         type: 'GET',
+         success: function(response){
+            console.log(response);
+         }
+
+      });
+   });
 }
