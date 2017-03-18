@@ -149,3 +149,30 @@ body{
 .like .active{
     color: red!important;
 }
+
+#user-card .following-data{
+    width: 25%;
+    float: left;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#user-card .following-data a{
+    color: #444;
+}
+#user-card .following-data .label-stat{
+    display: block;
+}
+
+#user-card .following-data a:hover{
+    color: #444;
+    text-decoration: none;
+}
+
+#user-card .following-data .number-stat{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
