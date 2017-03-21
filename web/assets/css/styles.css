@@ -176,3 +176,69 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
+
+/* PROFILE */
+.profile-box{
+    padding: 20px;
+    margin: 0px auto;
+    float: none;
+
+}
+
+.profile-box > .avatar{
+    background: #eee;
+    border-radius: 700px;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.profile-box > .avatar img{
+    height: 100%;
+    text-align: center;
+}
+
+.profile-box .name-surname{
+    margin: 0px auto;
+    text-align: center;
+
+}
+
+.profile-box .bio{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.profile-box #user_stats{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 47%;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.profile-box #user_stats a{
+    color: #444;
+}
+
+.profile-box #user_stats .number-stat{
+    font-weight: bold;
+}
+
+.profile-box #user_stats .label-stat{
+    font-size: 18px;
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.profile-box #user_stats .following-data{
+    float:left;
+}

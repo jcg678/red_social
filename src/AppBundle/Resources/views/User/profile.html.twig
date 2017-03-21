@@ -6,6 +6,74 @@
 
 {% block content %}
     <div class="col-md-10 box-default profile-box">
+        <div class="avatar">
+            {% if user.image == null %}
+                <img  src="{{ asset('assets/images/default.png') }}"></img>
+            {% else %}
+                <img  src="{{ asset('uploads/users/'~user.image) }}"></img>
+            {% endif %}
+        </div>
+        <div class="name-surname">
+            <h2>{{ user.name }} {{ user.surname }}</h2>
+            <div class="clearfix"></div>
+            <span class="nickname">
+                {{ user.nick }}
+            </span>
+        </div>
+        <div class="bio">
+            {{ user.bio }}
+        </div>
+        <div class="clearfix"></div>
+        <div id="user_stats">
+
+
+            {% set user_stats = app.user|user_stats %}
+            <div class="following-data">
+                <a href="#">
+                <span class="label-stat">
+                    Siguiendo
+                </span>
+                <span class="number-stat">
+                   {{ user_stats.following  }}
+                </span>
+                </a>
+            </div>
+
+            <div class="following-data">
+                <a href="#">
+                <span class="label-stat">
+                    Seguidores
+                </span>
+                <span class="number-stat">
+                    {{ user_stats.followers  }}
+                </span>
+                </a>
+            </div>
+
+            <div class="following-data">
+                <a href="#">
+                <span class="label-stat">
+                    Publicaciones
+                </span>
+                <span class="number-stat">
+                    {{ user_stats.publications  }}
+                </span>
+                </a>
+            </div>
+
+            <div class="following-data">
+                <a href="#">
+                <span class="label-stat">
+                    Me gustas
+                </span>
+                <span class="number-stat">
+                    {{ user_stats.likes  }}
+                </span>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
         <div id="user-publications">
             {% for publication in pagination %}
                 <div class="col-md-12 publication-item">
