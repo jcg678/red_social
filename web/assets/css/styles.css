@@ -242,3 +242,8 @@ body{
 .profile-box #user_stats .following-data{
     float:left;
 }
+
+.user_link{
+    color: black;
+    font-weight: bold;
+}
