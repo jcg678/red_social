@@ -108,7 +108,7 @@
         </div>
 
         <div class="following-data">
-            <a href="#">
+            <a href="{{ path('followed_users',{'nickname':app.user.nick}) }}">
                 <span class="label-stat">
                     Seguidores
                 </span>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="following-data">
-            <a href="#">
+            <a href="{{ path('user_profile',{'nickname':app.user.nick}) }}">
                 <span class="label-stat">
                     Publicaciones
                 </span>
