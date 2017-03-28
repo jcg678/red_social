@@ -1,0 +1,25 @@
+{% extends "AppBundle:Layouts:layout.html.twig" %}
+{% block content %}
+    <div class="container">
+        <div class="col-md-12 box-default box-notification">
+            <h1 class="box-header">Notificaciones</h1>
+
+            <div class="box-content">
+                {%  for notification in pagination %}
+                    <div class="col-md-12 notification-item">
+                        <div class="alert alert-default">
+                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            {%  if notification.type == "follow" %}
+                            X usuario te está siguiendo
+                            {% endif %}
+                            {%  if notification.type == "like" %}
+                                A x le ha gustado tu publicación
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

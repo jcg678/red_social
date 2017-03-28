@@ -14,3 +14,7 @@ app_following:
 app_like:
     resource: "@AppBundle/Resources/config/routing/like.yml"
     prefix: /
+
+app_notification:
+    resource: "@AppBundle/Resources/config/routing/notification.yml"
+    prefix: /
