@@ -38,22 +38,23 @@
       <file leaf-file-name="NotificationController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/NotificationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0384617">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state vertical-scroll-proportion="4.769231">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
-                <marker date="1490710432088" expanded="true" signature="419:478" placeholder="SELECT n FRO..BackendBUndle..." />
-                <marker date="1490710432088" expanded="true" signature="419:479" placeholder="SELECT n FRO..BackendBUndle..." />
-                <marker date="1490710432088" expanded="true" signature="419:502" placeholder="SELECT n FRO..BackendBundle..." />
+                <element signature="e#40#99#0#PHP" expanded="true" />
+                <marker date="1490823363480" expanded="true" signature="466:525" placeholder="SELECT n FRO..BackendBUndle..." />
+                <marker date="1490823363480" expanded="true" signature="466:526" placeholder="SELECT n FRO..BackendBUndle..." />
+                <marker date="1490823363480" expanded="true" signature="466:549" placeholder="SELECT n FRO..BackendBundle..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification_page.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notification_page.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Notification/notification_page.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5210728">
-              <caret line="16" column="131" selection-start-line="16" selection-start-column="131" selection-end-line="16" selection-end-column="131" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -62,7 +63,7 @@
       <file leaf-file-name="GetUserExtension.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/GetUserExtension.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.615385">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding />
             </state>
@@ -79,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notification.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing/notification.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.1551095">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -180,13 +181,13 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Services/NotificationService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/LikeController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/FollowingController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/routing/notification.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Layouts/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/NotificationController.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Twig/GetUserExtension.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Notification/notification_page.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/NotificationController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/routing/notification.yml" />
       </list>
     </option>
   </component>
@@ -230,8 +231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -458,6 +457,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,7 +526,7 @@
     <frame x="-9" y="-9" width="1786" height="962" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22409779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22700815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2862408" sideWeight="0.5838184" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -836,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,14 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing/notification.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Layouts/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -909,21 +900,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/NotificationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0384617">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <marker date="1490710432088" expanded="true" signature="419:478" placeholder="SELECT n FRO..BackendBUndle..." />
-            <marker date="1490710432088" expanded="true" signature="419:479" placeholder="SELECT n FRO..BackendBUndle..." />
-            <marker date="1490710432088" expanded="true" signature="419:502" placeholder="SELECT n FRO..BackendBundle..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/GetUserExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.615385">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding />
         </state>
@@ -931,8 +910,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Notification/notification_page.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5210728">
-          <caret line="16" column="131" selection-start-line="16" selection-start-column="131" selection-end-line="16" selection-end-column="131" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/NotificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.769231">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#40#99#0#PHP" expanded="true" />
+            <marker date="1490823363480" expanded="true" signature="466:525" placeholder="SELECT n FRO..BackendBUndle..." />
+            <marker date="1490823363480" expanded="true" signature="466:526" placeholder="SELECT n FRO..BackendBUndle..." />
+            <marker date="1490823363480" expanded="true" signature="466:549" placeholder="SELECT n FRO..BackendBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing/notification.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1551095">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="26" />
           <folding />
         </state>
       </provider>
