@@ -9,11 +9,12 @@
                     <div class="col-md-12 notification-item">
                         <div class="alert alert-default">
                             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            {% set notu = notification.typeId|get_user %}
                             {%  if notification.type == "follow" %}
-                            X usuario te está siguiendo
+                            <a href="{{ path("user_profile",{'nickname':notu.nick}) }}">{{ notu.name }}{{ notu.surname }}</a>  te está siguiendo
                             {% endif %}
                             {%  if notification.type == "like" %}
-                                A x le ha gustado tu publicación
+                                A <a href="{{ path("user_profile",{'nickname':notu.nick}) }}">{{ notu.name }}{{ notu.surname }}</a> le ha gustado tu publicación
                             {% endif %}
                         </div>
                     </div>
