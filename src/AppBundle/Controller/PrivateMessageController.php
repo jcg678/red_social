@@ -11,6 +11,7 @@ use AppBundle\Form\RegisterType;
 use Symfony\Component\HttpFoundation\Response;
 use AppBundle\Form\UserType;
 use BackendBundle\Entity\PrivateMessage;
+use AppBundle\Form\PrivateMessageType;
 
 class PrivateMessageController extends Controller{
     private $session;
@@ -18,9 +19,15 @@ class PrivateMessageController extends Controller{
         $this->session= new Session();
     }
     public function indexAction(Request $request){
-        $titulo = "hola";
+        $em = $this->getDoctrine()->getManager();
+        $user=$this->getUser();
+        $private_message = new PrivateMessage();
+        $form = $this->createForm(PrivateMessageType::class, $private_message,array(
+            'empty_data'=>$user
+        ));
+
         return $this->render('AppBundle:PrivateMessage:index.html.twig',array(
-            "titulo"=>$titulo
+            'form'=>$form->createView()
         ));
     }
 
