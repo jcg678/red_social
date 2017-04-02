@@ -21,6 +21,7 @@ class PrivateMessageController extends Controller{
     public function indexAction(Request $request){
         $em = $this->getDoctrine()->getManager();
         $user=$this->getUser();
+
         $private_message = new PrivateMessage();
         $form = $this->createForm(PrivateMessageType::class, $private_message,array(
             'empty_data'=>$user
