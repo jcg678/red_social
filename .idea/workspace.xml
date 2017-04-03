@@ -25,18 +25,8 @@
       <file leaf-file-name="notification_page.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Notification/notification_page.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Services/NotificationService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -45,8 +35,8 @@
       <file leaf-file-name="PrivateMessageController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PrivateMessageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5440613">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.68390805">
+              <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
               <folding>
                 <element signature="e#40#99#0#PHP" expanded="true" />
               </folding>
@@ -57,7 +47,7 @@
       <file leaf-file-name="PrivateMessageType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/PrivateMessageType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6538463">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
               <folding>
                 <element signature="e#34#74#0#PHP" expanded="true" />
@@ -69,7 +59,7 @@
       <file leaf-file-name="User.orm.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/config/doctrine/User.orm.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.59375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
               <folding />
             </state>
@@ -79,7 +69,7 @@
       <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BackendBundle/Repository/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="43" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="43" />
               <folding />
             </state>
@@ -99,7 +89,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/PrivateMessage/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
               <folding />
             </state>
@@ -225,7 +215,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -685,6 +674,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -752,14 +742,14 @@
     <frame x="-9" y="-9" width="1786" height="962" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23864959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24155995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2862408" sideWeight="0.5838184" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2862408" sideWeight="0.5855646" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2862408" sideWeight="0.4161816" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2862408" sideWeight="0.4144354" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -897,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="14" selection-start-line="50" selection-start-column="10" selection-end-line="64" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PublicationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1060,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,10 +1050,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="66" selection-start-line="33" selection-start-column="11" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <marker date="1490623302967" expanded="true" signature="-1:-1" placeholder="SELECT f FRO..BackendBundle..." />
-            <marker date="1490623302967" expanded="true" signature="-1:-1" placeholder="SELECT f FRO..BackendBundle..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1060,6 @@
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
-            <marker date="1490967536314" expanded="true" signature="-1:-1" placeholder="SELECT n FRO..BackendBundle..." />
           </folding>
         </state>
       </provider>
@@ -1110,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing/private_messages.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Layouts/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1128,7 +1098,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/PrivateMessage/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding />
         </state>
@@ -1136,15 +1106,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/config/doctrine/User.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.59375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/config/routing/private_messages.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/PrivateMessageType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6538463">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
           <folding>
             <element signature="e#34#74#0#PHP" expanded="true" />
@@ -1152,18 +1138,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Repository/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PublicationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5210728">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="55" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PrivateMessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5440613">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.68390805">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
           </folding>
