@@ -81,4 +81,33 @@ class PrivateMessageController extends Controller{
         ));
     }
 
+    public function sendedAction(Request $request){
+        $private_messages = $this->getPrivateMessages($request,"sended");
+        return $this->render('AppBundle:privateMessage:sended.html.twig',array(
+            'pagination'=>$private_messages
+        ));
+    }
+
+    public function getPrivateMessages(Request $request,$type = null){
+    $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        $user_id=$user->getId();
+        if( $type =="sended" || $type == null){
+            $dql = "SELECT p FROM BackendBundle:PrivateMessage p WHERE"
+                ." p.emitter = $user_id ORDER BY p.id DESC";
+
+        }else{
+            $dql = "SELECT p FROM BackendBundle:PrivateMessage p WHERE"
+            ." p.receiver = $user_id ORDER BY p.id DESC";
+        }
+        $query = $em->createQuery($dql);
+        $paginator = $this->get('knp_paginator');
+        $pagination = $paginator->paginate(
+            $query,
+            $request->query->getInt('page',1),
+            5
+        );
+        return $pagination;
+    }
+
 }
