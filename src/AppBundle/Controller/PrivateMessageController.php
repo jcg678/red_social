@@ -75,9 +75,15 @@ class PrivateMessageController extends Controller{
             $this->session->getFlashBag()->add("status",$status);
             return $this->redirectToRoute("private_message_index");
         }
+        $private_messages = $this->getPrivateMessages($request);
+        dump($private_messages);
+        $user = $this->getUser();
+        $user_id=$user->getId();
+        dump($user_id);
 
         return $this->render('AppBundle:PrivateMessage:index.html.twig',array(
-            'form'=>$form->createView()
+            'form'=>$form->createView(),
+            'pagination'=>$private_messages
         ));
     }
 
@@ -92,7 +98,7 @@ class PrivateMessageController extends Controller{
     $em = $this->getDoctrine()->getManager();
         $user = $this->getUser();
         $user_id=$user->getId();
-        if( $type =="sended" || $type == null){
+        if( $type =="sended" ){
             $dql = "SELECT p FROM BackendBundle:PrivateMessage p WHERE"
                 ." p.emitter = $user_id ORDER BY p.id DESC";
 

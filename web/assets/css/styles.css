@@ -247,3 +247,9 @@ body{
     color: black;
     font-weight: bold;
 }
+.form-private-message select,
+.form-private-message textarea,
+.form-private-message input{
+    margin-bottom: 10px;
+
+}
