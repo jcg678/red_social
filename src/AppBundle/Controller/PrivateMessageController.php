@@ -116,4 +116,16 @@ class PrivateMessageController extends Controller{
         return $pagination;
     }
 
+    public function notReadedAction(){
+        $em = $this->getDoctrine()->getManager();
+        $user= $this->getUser();
+        $private_message_repo=$em->getRepository('BackendBundle:PrivateMessage');
+        $count_not_readed_msg = count($private_message_repo->findBy(
+            array(
+                'receiver'=> $user,
+                'readed'=> 0
+            )
+        ));
+        return new Response($count_not_readed_msg);
+    }
 }
