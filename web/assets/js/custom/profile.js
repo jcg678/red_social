@@ -20,6 +20,7 @@ $(document).ready(function(){
    }));
 
    ias.on('ready',function(event){
+      followButtons();
       buttons();
    });
    ias.on('rendered',function(event){
@@ -74,3 +75,4 @@ function buttons(){
       });
    });
 }
+
