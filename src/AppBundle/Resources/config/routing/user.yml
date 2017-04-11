@@ -29,3 +29,7 @@ user_search:
 user_profile:
     path: /user/{nickname}
     defaults: { _controller: AppBundle:User:profile, nickname: null }
+
+email:
+    path: /email
+    defaults: { _controller: AppBundle:User:email }

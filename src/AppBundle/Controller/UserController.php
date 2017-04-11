@@ -209,4 +209,24 @@ class UserController extends Controller{
             ));
     }
 
+
+    public function emailAction($name = 'paco')
+    {
+        $message = \Swift_Message::newInstance()
+            ->setSubject('Hello Email')
+            ->setFrom('info@demenus.es')
+            ->setTo('jcg678@hotmail.es')
+            ->setBody(
+                $this->renderView(
+                    'AppBundle:User:email.html.twig',
+                    array('name' => $name)
+                )
+            )
+        ;
+        $this->get('mailer')->send($message);
+
+
+
+    }
+
 }
