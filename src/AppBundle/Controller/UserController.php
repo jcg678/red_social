@@ -14,7 +14,7 @@ use AppBundle\Form\UserType;
 class UserController extends Controller{
     private $session;
     public function __construct(){
-        $this->session= $_SESSION;
+        //$this->session= $_SESSION;
     }
     public function loginAction(Request $request){
         if(is_object($this->getUser())){
@@ -59,7 +59,7 @@ class UserController extends Controller{
                     $flush = $em->flush();
                     if($flush == null){
                         $status="Te has registrado correctamente";
-                        $this->session->getFlashBag()->add("status",$status);
+                        //$this->session->getFlashBag()->add("status",$status);
                         return $this->redirect("login");
                     }else{
                         $status="No te has registrado";
@@ -71,7 +71,7 @@ class UserController extends Controller{
             }else{
                 $status="No te has registrado";
             }
-            $this->session->getFlashBag()->add("status",$status);
+            //$this->session->getFlashBag()->add("status",$status);
         }
         return $this->render('AppBundle:User:register.html.twig',[
             "form"=>$form->createView()
@@ -138,7 +138,7 @@ class UserController extends Controller{
             }else{
                 $status="No has actulizado los datos";
             }
-            $this->session->getFlashBag()->add("status",$status);
+            //$this->session->getFlashBag()->add("status",$status);
             return $this->redirect('my-data');
         }
         return $this->render('AppBundle:User:edit_user.html.twig',[
