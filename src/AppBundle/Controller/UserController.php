@@ -14,7 +14,7 @@ use AppBundle\Form\UserType;
 class UserController extends Controller{
     private $session;
     public function __construct(){
-        $this->session= new Session();
+        $this->session= $_SESSION;
     }
     public function loginAction(Request $request){
         if(is_object($this->getUser())){

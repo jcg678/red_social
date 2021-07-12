@@ -15,7 +15,7 @@ use AppBundle\Form\UserType;
 class FollowingController extends Controller{
     private $session;
     public function __construct(){
-        $this->session= new Session();
+        $this->session= $_SESSION;
     }
 
     public function followAction(Request $request){
@@ -33,7 +33,7 @@ class FollowingController extends Controller{
         if($flush == null){
             $notification = $this->get('app.notification_service');
             $notification->set($followed,'follow',$user->getId());
-            $status= "Ahora estás siguiendo a este usuario!!";
+            $status= "Ahora estï¿½s siguiendo a este usuario!!";
         }else{
             $status= "No se ha podido seguir a este usuario";
         }

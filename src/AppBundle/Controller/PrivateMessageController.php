@@ -16,7 +16,7 @@ use AppBundle\Form\PrivateMessageType;
 class PrivateMessageController extends Controller{
     private $session;
     public function __construct(){
-        $this->session= new Session();
+        $this->session= $_SESSION;
     }
     public function indexAction(Request $request){
         $em = $this->getDoctrine()->getManager();

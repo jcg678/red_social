@@ -13,7 +13,7 @@ class PublicationController extends Controller{
 
     private $session;
     public function __construct(){
-        $this->session= new Session();
+        $this->session= $_SESSION;
     }
 
     public function indexAction(Request $request){
