@@ -64,7 +64,7 @@ class PublicationController extends Controller{
             }else{
                 $status='La publicación no se ha creado, porque le formualrio no es valido';
             }
-            $this->session->getFlashBag()->add("status",$status);
+            //$this->session->getFlashBag()->add("status",$status);
             return $this->redirectToRoute('home_publications');
         }
        $publications = $this->getPublications($request);
