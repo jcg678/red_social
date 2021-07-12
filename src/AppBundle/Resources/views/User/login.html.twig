@@ -4,7 +4,7 @@
         <h2>Indentificarte</h2>
         <hr/>
         {% if is_granted('ROLE_USER') %}
-        {{ dump(app.user) }}
+        
         {% endif %}
         <form action="{{ path("login_check") }}" method="post">
             <label>Email</label>
